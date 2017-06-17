@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>My Awesome Photos - out</title>
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet' type='text/css' />
+		<link type="text/css" rel="stylesheet" media="all" href="./global.css" />
+		<script src="./json.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="./cookie.js"></script>
+		<script src="./global.js"></script>
+	</head>
+<body data-resolution="3840 2560 1920 1280 1024 640" data-respath="./">
+	
+<ol id="marker">
+</ol>
+
+<div id="sidebar">
+	<div class="foreground">
+		<div id="profile" class="camera icon"></div>
+		<h1>My Awesome Photos</h1>
+		<ul id="nav">
+						 
+		</ul>
+	</div>
+	
+	<ul id="control">
+	<li><a href="#" id="resbutton"><span class="monitor icon"></span><span class="restext"></span></a></li>
+	<li style="display: block"><a href="#" id="textbutton" class="active"><span class="toggle icon"></span><span class="text">hide text</span></a></li>
+	<li style="display: block"><a href="#" id="sharebutton"><span class="heart icon"></span>share</a></li>
+	<li  style="display: none"><a href="#" id="download"><span class="download icon"></span>download</a></li>
+	</ul>
+			
+	<div class="background"></div>
+</div>
+
+<div id="resolution">
+</div>
+
+<div id="share">
+	<ul>
+	<li><a href="https://news.ycombinator.com/submit" target="_blank"><span class="icon hackernews"></span> Hackernews</a></li>
+	
+	<li><a href="#" onclick="window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent(window.location)); return false">
+		<span class="icon facebook"></span> Facebook
+	</a></li>
+	
+	<li><a href="#" onclick="window.open('https://www.reddit.com/submit?url=' + encodeURIComponent(window.location)); return false">
+		<span class="icon reddit"></span> Reddit
+	</a></li>
+	
+	<li><a href="#" id="pinterest"><span class="icon pinterest"></span> Pinterest</a></li>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#pinterest').click(function(){
+				window.open('http://pinterest.com/pin/create/button/?url='+encodeURIComponent(window.location)+'&media='+encodeURIComponent(window.location)+($(current_slide).data('url')+'/'+$('#resolution li').eq(0).data('res')+'.jpg'));
+				return false;
+			});
+		});
+	</script>
+	
+	
+	<li><a href="#" onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location)); return false">
+		<span class="icon twitter"></span> Twitter
+	</a></li>
+	
+	</ul>
+</div>
+
+<div id="main">
+	<div class="slide" style="color: #ffffff; background-color: #37E336" data-type="image" data-width="30" data-height="20" data-imagewidth="640" data-imageheight="857" data-textcolor="#ffffff" data-color1="#3D3A33" data-color2="#37E336" data-color3="#52FC14" data-color4="#46FF25" data-color5="#918647" data-color6="#4AFEAF" data-color7="#E8E3C6" data-videoformats="h264 vp8" data-polygon=''> <a name="1" class="internal"></a> <div class="post" style="top: 30%; left: 5%; width: 30%; height: 20%"> <div class="content"> <h1>The First Glitched Image</h1> <p>Getting to this point was a challenge, lemme tell you.</p> </div> </div> <img class="image blank" src="//:0" width="640" height="857" data-url="1651out" /> </div> <div class="slide" style="color: #ffffff; background-color: #B9DDCD" data-type="image" data-width="30" data-height="20" data-imagewidth="640" data-imageheight="857" data-textcolor="#ffffff" data-color1="#BDDDBA" data-color2="#B9DDCD" data-color3="#97F9D1" data-color4="#B9EFD8" data-color5="#D9EBDB" data-color6="#D6FEF5" data-color7="#F0FEFC" data-videoformats="h264 vp8" data-polygon=''> <a name="2" class="internal"></a> <div class="post" style="top: 30%; left: 5%; width: 30%; height: 20%"> <div class="content"> <h1>The second glitched image</h1> <p>It's like you've been staring at the screen for too long.</p> </div> </div> <img class="image blank" src="//:0" width="640" height="857" data-url="1656out" /> </div> <div class="slide" style="color: #ffffff; background-color: #91AF76" data-type="image" data-width="" data-height="" data-imagewidth="640" data-imageheight="960" data-textcolor="#ffffff" data-color1="#37462E" data-color2="#91AF76" data-color3="#B2D1BF" data-color4="#E1FEB7" data-color5="#DEF6D5" data-color6="#F3FED8" data-color7="#F7FEF4" data-videoformats="h264 vp8" data-polygon=''> <a name="3" class="internal"></a> <div class="post" style="top: 70%; left: 20%; width: 60%; height: 30%"> <div class="content"> </div> </div> <img class="image blank" src="//:0" width="640" height="960" data-url="2011out" /> </div> <div class="slide" style="color: #ffffff; background-color: #B4B4B1" data-type="image" data-width="" data-height="" data-imagewidth="640" data-imageheight="477" data-textcolor="#ffffff" data-color1="#888877" data-color2="#B4B4B1" data-color3="#C7CFC8" data-color4="#DADAD9" data-color5="#ECE8DF" data-color6="#DCFFF8" data-color7="#F2FFFE" data-videoformats="h264 vp8" data-polygon=''> <a name="4" class="internal"></a> <div class="post" style="top: 70%; left: 20%; width: 60%; height: 30%"> <div class="content"> </div> </div> <img class="image blank" src="//:0" width="640" height="477" data-url="38311to13out" /> </div> <div class="slide" style="color: #ffffff; background-color: #869483" data-type="image" data-width="" data-height="" data-imagewidth="640" data-imageheight="857" data-textcolor="#ffffff" data-color1="#313540" data-color2="#869483" data-color3="#A8ADA0" data-color4="#BBCBBA" data-color5="#CDD1B9" data-color6="#D4D9D1" data-color7="#F0F5F0" data-videoformats="h264 vp8" data-polygon=''> <a name="5" class="internal"></a> <div class="post" style="top: 70%; left: 20%; width: 60%; height: 30%"> <div class="content"> </div> </div> <img class="image blank" src="//:0" width="640" height="857" data-url="4267to10out" /> </div> <div class="slide" style="color: #ffffff; background-color: #650021" data-type="image" data-width="" data-height="" data-imagewidth="640" data-imageheight="857" data-textcolor="#ffffff" data-color1="#6C0006" data-color2="#650021" data-color3="#6B0053" data-color4="#980001" data-color5="#F83A68" data-color6="#FF5A90" data-color7="#D8D0CC" data-videoformats="h264 vp8" data-polygon=''> <a name="6" class="internal"></a> <div class="post" style="top: 70%; left: 20%; width: 60%; height: 30%"> <div class="content"> </div> </div> <img class="image blank" src="//:0" width="640" height="857" data-url="80426423304out" /> </div> <div class="slide" style="color: #ffffff; background-color: #C91917" data-type="image" data-width="" data-height="" data-imagewidth="640" data-imageheight="960" data-textcolor="#ffffff" data-color1="#5B5C62" data-color2="#C91917" data-color3="#F40258" data-color4="#FBB313" data-color5="#FA50BA" data-color6="#738382" data-color7="#C0AEBD" data-videoformats="h264 vp8" data-polygon=''> <a name="7" class="internal"></a> <div class="post" style="top: 70%; left: 20%; width: 60%; height: 30%"> <div class="content"> </div> </div> <img class="image blank" src="//:0" width="640" height="960" data-url="pitcherhandledetailout" /> </div> <div class="slide" style="color: #ffffff; background-color: #17295F" data-type="image" data-width="" data-height="" data-imagewidth="640" data-imageheight="960" data-textcolor="#ffffff" data-color1="#020B05" data-color2="#17295F" data-color3="#7DA858" data-color4="#001498" data-color5="#025ABB" data-color6="#2AC1F1" data-color7="#D4DAD3" data-videoformats="h264 vp8" data-polygon=''> <a name="8" class="internal"></a> <div class="post" style="top: 70%; left: 20%; width: 60%; height: 30%"> <div class="content"> </div> </div> <img class="image blank" src="//:0" width="640" height="960" data-url="pitcherhandlesideout" /> </div> <div class="slide" style="color: #ffffff; background-color: #1F1A53" data-type="image" data-width="" data-height="" data-imagewidth="640" data-imageheight="960" data-textcolor="#ffffff" data-color1="#030411" data-color2="#1F1A53" data-color3="#EC1509" data-color4="#E0311F" data-color5="#686AC9" data-color6="#B557D1" data-color7="#C1C2CF" data-videoformats="h264 vp8" data-polygon=''> <a name="9" class="internal"></a> <div class="post" style="top: 70%; left: 20%; width: 60%; height: 30%"> <div class="content"> </div> </div> <img class="image blank" src="//:0" width="640" height="960" data-url="pitcherside1out" /> </div> <div class="slide" style="color: #ffffff; background-color: #7E7E72" data-type="image" data-width="" data-height="" data-imagewidth="640" data-imageheight="960" data-textcolor="#ffffff" data-color1="#0D390C" data-color2="#7E7E72" data-color3="#39BA2A" data-color4="#65E09B" data-color5="#9BF0A7" data-color6="#BEE3C4" data-color7="#E6F7E9" data-videoformats="h264 vp8" data-polygon=''> <a name="10" class="internal"></a> <div class="post" style="top: 70%; left: 20%; width: 60%; height: 30%"> <div class="content"> </div> </div> <img class="image blank" src="//:0" width="640" height="960" data-url="pitchersideout" /> </div> 
+	
+	<div id="comments">
+	<div id="disqus_thread"></div>
+	</div>
+	
+	<script type="text/javascript">
+		var disqus_shortname = '';
+		var disqus_identifier = '.';
+		
+		if(disqus_shortname){
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		}
+	</script>
+</div>
+
+</body>
+</html>
